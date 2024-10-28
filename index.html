@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Développeur de Jeux Vidéo</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation principale -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="home">
+        <h1>Bienvenue sur mon portfolio</h1>
+        <p>Je suis un développeur passionné de jeux vidéo. Découvrez mes projets et mon parcours !</p>
+        <a href="#portfolio" class="button">Voir mes projets</a>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Développeur de jeux vidéo avec expérience en Unreal Engine, Godot et Unity. Passionné par la création de mondes interactifs et immersifs.</p>
+        <p>Langages : C#, GDScript, Blueprints</p>
+    </section>
+
+    <!-- Section Portfolio -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <h3>Nom du Jeu 1</h3>
+            <img src="assets/images/jeu1.png" alt="Nom du Jeu 1">
+            <p>Description du projet, technologies utilisées, lien de téléchargement ou démo.</p>
+        </div>
+        <div class="project">
+            <h3>Nom du Jeu 2</h3>
+            <img src="assets/images/jeu2.png" alt="Nom du Jeu 2">
+            <p>Description du projet, technologies utilisées, lien de téléchargement ou démo.</p>
+        </div>
+        <!-- Ajouter d'autres projets au besoin -->
+    </section>
+
+    <!-- Section Blog -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <article>
+            <h3>Article 1</h3>
+            <p>Extrait d'un article ou tutoriel sur le développement de jeux vidéo. <a href="#">Lire plus</a></p>
+        </article>
+        <article>
+            <h3>Article 2</h3>
+            <p>Extrait d'un autre article ou tutoriel. <a href="#">Lire plus</a></p>
+        </article>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="mailto:ton.email@example.com" method="post" enctype="text/plain">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Enzo HOURLAY. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
