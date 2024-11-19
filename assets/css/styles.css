@@ -1,0 +1,209 @@
+/* Palette de couleurs :
+   - Orange lumineux : #ff9800
+   - Noir profond : #0a0a0a
+   - Gris métallisé : #303030
+   - Blanc : #ffffff
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    background-color: #0a0a0a;
+    background-image: url('assets/images/pixel-grid.png'); /* Subtile grille pixelisée */
+    background-size: 20px 20px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #303030;
+    border-bottom: 2px solid #ff9800;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ff9800;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px #ff9800;
+}
+
+main {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ff9800;
+    text-shadow: 0 0 15px #ff9800, 0 0 30px #ff9800;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #dddddd;
+    margin-bottom: 20px;
+}
+
+#home {
+    background: #303030;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);
+}
+
+#about, #contact {
+    background: #303030;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+#portfolio .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+#portfolio .projects article {
+    background: #303030;
+    border: 2px solid #ff9800;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.2);
+}
+
+#portfolio .projects article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(255, 152, 0, 0.6);
+}
+
+#portfolio .projects article h2 {
+    color: #ff9800;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#portfolio .projects article p {
+    color: #cccccc;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background: #ff9800;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.4);
+}
+
+.button:hover {
+    background: #ffffff;
+    color: #ff9800;
+    box-shadow: 0 4px 20px rgba(255, 152, 0, 0.8);
+}
+
+/* Section principale */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espace vertical entre les boutons */
+    padding: 50px 20px;
+}
+
+/* Boutons */
+.contact-button {
+    text-decoration: none; /* Supprime le soulignement du lien */
+    display: block; /* Limite la zone cliquable au contenu */
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-button div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Espace entre l'icône et le texte */
+    padding: 15px 20px;
+    background: #303030;
+    border: 2px solid #ff9800;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.contact-button div:hover {
+    transform: translateY(-5px);
+    background: #0a0a0a;
+    box-shadow: 0 8px 30px rgba(255, 152, 0, 0.8);
+}
+
+/* Icônes */
+.contact-button img {
+    width: 3em; /* Taille légèrement supérieure au texte */
+    height: auto;
+    flex-shrink: 0; /* Empêche la déformation */
+}
+
+/* Texte */
+.contact-button p {
+    color: #ffffff;
+    font-size: 2rem;
+    text-shadow: 0 0 8px #ff9800;
+    margin: 0;
+}
+
+footer {
+    background: #0a0a0a;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -4px 15px rgba(255, 152, 0, 0.4);
+}
+
+footer p {
+    font-size: 1rem;
+}
